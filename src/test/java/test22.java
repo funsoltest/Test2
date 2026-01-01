@@ -1,6 +1,7 @@
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -34,7 +35,7 @@ public class test22 {
 
         System.out.println(">>>> App Started Successfully");
     }
-    @Test
+    @AfterClass
     public void StopApp() throws InterruptedException {
         if (driver != null) {
             System.out.println(">>>> App Close Successfully");
