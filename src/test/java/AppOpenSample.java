@@ -28,11 +28,10 @@ public class AppOpenSample {
         driver = new AndroidDriver(
                 new URL("http://127.0.0.1:4723/wd/hub"), caps);
 
-
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         dim = driver.manage().window().getSize();
 
-        System.out.println(">>>> App Started Successfully");
+        System.out.println(">>>> App Started Successfully ....");
     }
     @AfterClass
     public void StopApp() throws InterruptedException {
